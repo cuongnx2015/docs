@@ -181,6 +181,7 @@
           <li uib-dropdown class="dropdown">
             <a href uib-dropdown-toggle>
               <span ng-switch="currentLang">
+                <span ng-switch-when="vi">Tiếng Việt</span>
                 <span ng-switch-when="en">English</span>
                 <span ng-switch-when="fr">Français</span>
                 <span ng-switch-when="de">Deutsch</span>
@@ -197,6 +198,7 @@
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
+              <li><a href ng-click="changeLanguage('vi')" ng-class="{ 'bg-info': currentLang == 'vi' }">Tiếng Việt</a></li>
               <li><a href ng-click="changeLanguage('en')" ng-class="{ 'bg-info': currentLang == 'en' }">English</a></li>
               <li><a href ng-click="changeLanguage('fr')" ng-class="{ 'bg-info': currentLang == 'fr' }">Français</a></li>
               <li><a href ng-click="changeLanguage('de')" ng-class="{ 'bg-info': currentLang == 'de' }">Deutsch</a></li>

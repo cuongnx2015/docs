@@ -1,0 +1,655 @@
+{
+  "login": {
+    "username": "Tên đăng nhập",
+    "password": "Mật khẩu",
+    "validation_code_required": "Yêu cầu mã xác thực",
+    "validation_code_title": "Bạn đã kích hoạt xác thực hai yếu tố cho tài khoản của mình. Vui lòng nhập mã xác thực được tạo bởi ứng dụng trên điện thoại mà bạn đã cấu hình.",
+    "validation_code": "Mã xác thực",
+    "remember_me": "Ghi nhớ đăng nhập",
+    "submit": "Đăng nhập",
+    "login_as_guest": "Đăng nhập với tư cách khách",
+    "login_failed_title": "Đăng nhập thất bại",
+    "login_failed_message": "Tên đăng nhập hoặc mật khẩu không hợp lệ",
+    "password_lost_btn": "Quên mật khẩu?",
+    "password_lost_sent_title": "Đã gửi email đặt lại mật khẩu",
+    "password_lost_sent_message": "Một email đã được gửi đến <strong>{{ username }}</strong> để đặt lại mật khẩu của bạn",
+    "password_lost_error_title": "Lỗi đặt lại mật khẩu",
+    "password_lost_error_message": "Không thể gửi email đặt lại mật khẩu, vui lòng liên hệ quản trị viên để được hỗ trợ đặt lại thủ công"
+  },
+  "passwordlost": {
+    "title": "Quên mật khẩu",
+    "message": "Vui lòng nhập tên đăng nhập để nhận liên kết đặt lại mật khẩu. Nếu bạn không nhớ tên đăng nhập, hãy liên hệ với quản trị viên",
+    "submit": "Đặt lại mật khẩu của tôi"
+  },
+  "passwordreset": {
+    "message": "Vui lòng nhập mật khẩu mới",
+    "submit": "Đổi mật khẩu của tôi",
+    "error_title": "Lỗi khi thay đổi mật khẩu",
+    "error_message": "Yêu cầu khôi phục mật khẩu của bạn đã hết hạn, vui lòng yêu cầu lại trên trang đăng nhập"
+  },
+  "index": {
+    "toggle_navigation": "Ẩn/Hiện điều hướng",
+    "nav_documents": "Tài liệu",
+    "nav_tags": "Thẻ",
+    "nav_users_groups": "Người dùng & Nhóm",
+    "error_info": "{{ count }} lỗi mới",
+    "logged_as": "Đăng nhập với tên {{ username }}",
+    "nav_settings": "Cài đặt",
+    "logout": "Đăng xuất",
+    "global_quota_warning": "<strong>Cảnh báo!</strong> Dung lượng toàn hệ thống sắp đầy: đã sử dụng {{ current | number: 0 }}MB ({{ percent | number: 1 }}%) trên tổng {{ total | number: 0 }}MB"
+  }
+,
+  "document": {
+    "navigation_up": "Đi lên một cấp",
+    "toggle_navigation": "Bật/tắt điều hướng thư mục",
+    "display_mode_list": "Hiển thị tài liệu dạng danh sách",
+    "display_mode_grid": "Hiển thị tài liệu dạng lưới",
+    "search_simple": "Tìm kiếm đơn giản",
+    "search_fulltext": "Tìm kiếm toàn văn",
+    "search_creator": "Người tạo",
+    "search_language": "Ngôn ngữ",
+    "search_before_date": "Tạo trước ngày này",
+    "search_after_date": "Tạo sau ngày này",
+    "search_before_update_date": "Cập nhật trước ngày này",
+    "search_after_update_date": "Cập nhật sau ngày này",
+    "search_tags": "Thẻ",
+    "search_shared": "Chỉ tài liệu được chia sẻ",
+    "search_workflow": "Quy trình được giao cho tôi",
+    "search_clear": "Xóa",
+    "any_language": "Bất kỳ ngôn ngữ nào",
+    "add_document": "Thêm tài liệu",
+    "import_eml": "Nhập từ email (định dạng EML)",
+    "tags": "Thẻ",
+    "no_tags": "Không có thẻ",
+    "no_documents": "Không có tài liệu trong cơ sở dữ liệu",
+    "search": "Tìm kiếm",
+    "search_empty": "Không tìm thấy kết quả cho <strong>\"{{ search }}\"</strong>",
+    "shared": "Được chia sẻ",
+    "current_step_name": "Bước hiện tại",
+    "title": "Tiêu đề",
+    "description": "Mô tả",
+    "contributors": "Người đóng góp",
+    "language": "Ngôn ngữ",
+    "creation_date": "Ngày tạo",
+    "subject": "Chủ đề",
+    "identifier": "Định danh",
+    "publisher": "Nhà phát hành",
+    "format": "Định dạng",
+    "source": "Nguồn",
+    "type": "Loại",
+    "coverage": "Phạm vi",
+    "rights": "Quyền",
+    "relations": "Mối quan hệ",
+    "page_size": "Kích thước trang",
+    "page_size_10": "10 mỗi trang",
+    "page_size_20": "20 mỗi trang",
+    "page_size_30": "30 mỗi trang",
+    "upgrade_quota": "Để nâng cấp dung lượng, hãy liên hệ quản trị viên",
+    "quota": "Đã dùng {{ current | number: 0 }}MB ({{ percent | number: 1 }}%) trên tổng {{ total | number: 0 }}MB",
+    "count": "Tìm thấy {{ count }} tài liệu{{ count > 1 ? '' : '' }}",
+    "last_updated": "Cập nhật lần cuối {{ date | timeAgo: dateFormat }}",
+    "view": {
+      "delete_comment_title": "Xóa bình luận",
+      "delete_comment_message": "Bạn có chắc chắn muốn xóa bình luận này không?",
+      "delete_document_title": "Xóa tài liệu",
+      "delete_document_message": "Bạn có chắc chắn muốn xóa tài liệu này không?",
+      "shared_document_title": "Tài liệu được chia sẻ",
+      "shared_document_message": "Bạn có thể chia sẻ tài liệu này bằng cách gửi đường dẫn sau. Lưu ý rằng bất kỳ ai có đường dẫn này đều có thể xem tài liệu.<br/><input class=\"form-control share-link\" type=\"text\" readonly=\"readonly\" value=\"{{ link }}\" onclick=\"this.select(); document.execCommand('copy');\" />",
+      "not_found": "Không tìm thấy tài liệu",
+      "forbidden": "Truy cập bị từ chối",
+      "download_files": "Tải xuống tập tin",
+      "export_pdf": "Xuất ra PDF",
+      "by_creator": "bởi",
+      "comments": "Bình luận",
+      "no_comments": "Chưa có bình luận nào cho tài liệu này",
+      "add_comment": "Thêm bình luận",
+      "error_loading_comments": "Lỗi khi tải bình luận",
+      "workflow_current": "Bước quy trình hiện tại",
+      "workflow_comment": "Thêm bình luận quy trình",
+      "workflow_validated_title": "Bước quy trình đã được xác nhận",
+      "workflow_validated_message": "Bước quy trình đã được xác nhận thành công.",
+      "content": {
+        "content": "Nội dung",
+        "delete_file_title": "Xóa tập tin",
+        "delete_file_message": "Bạn có chắc chắn muốn xóa tập tin này không?",
+        "upload_pending": "Đang chờ...",
+        "upload_progress": "Đang tải lên...",
+        "upload_error": "Lỗi tải lên",
+        "upload_error_quota": "Đã hết dung lượng",
+        "drop_zone": "Kéo & thả tập tin vào đây để tải lên",
+        "add_files": "Thêm tập tin",
+        "file_processing_indicator": "Tập tin này đang được xử lý. Chức năng tìm kiếm sẽ không khả dụng cho đến khi hoàn tất.",
+        "reprocess_file": "Xử lý lại tập tin này",
+        "upload_new_version": "Tải lên phiên bản mới",
+        "open_versions": "Xem lịch sử phiên bản",
+        "display_mode_list": "Hiển thị tập tin dạng danh sách",
+        "display_mode_grid": "Hiển thị tập tin dạng lưới"
+      },
+      "workflow": {
+        "workflow": "Quy trình",
+        "message": "Xác minh hoặc phê duyệt tài liệu của bạn cùng với thành viên trong tổ chức bằng các quy trình.",
+        "workflow_start_label": "Bắt đầu quy trình nào?",
+        "add_more_workflow": "Thêm quy trình khác",
+        "start_workflow_submit": "Bắt đầu quy trình",
+        "full_name": "<strong>{{ name }}</strong> bắt đầu lúc {{ create_date | date }}",
+        "cancel_workflow": "Hủy quy trình hiện tại",
+        "cancel_workflow_title": "Hủy quy trình",
+        "cancel_workflow_message": "Bạn có chắc chắn muốn hủy quy trình hiện tại không?",
+        "no_workflow": "Bạn không thể bắt đầu quy trình nào trên tài liệu này."
+      },
+      "permissions": {
+        "permissions": "Quyền",
+        "message": "Quyền có thể được áp dụng trực tiếp cho tài liệu này hoặc kế thừa từ <a href=\"#/tag\">thẻ</a>.",
+        "title": "Quyền trên tài liệu này",
+        "inherited_tags": "Quyền kế thừa từ thẻ",
+        "acl_source": "Từ",
+        "acl_target": "Cho",
+        "acl_permission": "Quyền hạn"
+      },
+      "activity": {
+        "activity": "Hoạt động",
+        "message": "Mọi thao tác trên tài liệu này đều được ghi lại tại đây."
+      }
+    },
+    "edit": {
+      "document_edited_with_errors": "Tài liệu đã chỉnh sửa thành công nhưng một số tập tin không thể tải lên",
+      "document_added_with_errors": "Tài liệu đã thêm thành công nhưng một số tập tin không thể tải lên",
+      "quota_reached": "Đã hết dung lượng",
+      "primary_metadata": "Siêu dữ liệu chính",
+      "title_placeholder": "Tên được gán cho tài nguyên",
+      "description_placeholder": "Mô tả về tài nguyên",
+      "new_files": "Tập tin mới",
+      "orphan_files": "+ {{ count }} tập tin",
+      "additional_metadata": "Siêu dữ liệu bổ sung",
+      "subject_placeholder": "Chủ đề của tài nguyên",
+      "identifier_placeholder": "Tham chiếu rõ ràng đến tài nguyên trong một ngữ cảnh nhất định",
+      "publisher_placeholder": "Tổ chức/cá nhân chịu trách nhiệm cung cấp tài nguyên",
+      "format_placeholder": "Định dạng tập tin, phương tiện vật lý, hoặc kích thước của tài nguyên",
+      "source_placeholder": "Một tài nguyên liên quan mà từ đó tài nguyên này được dẫn xuất",
+      "uploading_files": "Đang tải tập tin..."
+    },
+    "default": {
+      "upload_pending": "Đang chờ...",
+      "upload_progress": "Đang tải lên...",
+      "upload_error": "Lỗi tải lên",
+      "upload_error_quota": "Đã hết dung lượng",
+      "quick_upload": "Tải nhanh",
+      "drop_zone": "Kéo & thả tập tin vào đây để tải lên",
+      "add_files": "Thêm tập tin",
+      "add_new_document": "Thêm vào tài liệu mới",
+      "latest_activity": "Hoạt động gần đây",
+      "footer_sismics": "Được phát triển với <span class=\"fas fa-heart\"></span> bởi <a href=\"https://www.facebook.com\" target=\"_blank\">Như</a>",
+      "api_documentation": "Tài liệu API",
+      "feedback": "Gửi phản hồi cho chúng tôi",
+      "workflow_document_list": "Tài liệu được giao cho bạn",
+      "select_all": "Chọn tất cả",
+      "select_none": "Bỏ chọn tất cả"
+    },
+    "pdf": {
+      "export_title": "Xuất ra PDF",
+      "export_metadata": "Xuất siêu dữ liệu",
+      "export_comments": "Xuất bình luận",
+      "fit_to_page": "Căn hình vừa trang",
+      "margin": "Lề",
+      "millimeter": "mm"
+    },
+    "share": {
+      "title": "Chia sẻ tài liệu",
+      "message": "Đặt tên cho việc chia sẻ nếu bạn muốn chia sẻ nhiều lần cùng một tài liệu.",
+      "submit": "Chia sẻ"
+    }
+  },
+  "file": {
+    "view": {
+      "previous": "Trước",
+      "next": "Tiếp",
+      "not_found": "Không tìm thấy tập tin"
+    },
+    "edit": {
+      "title": "Chỉnh sửa tập tin",
+      "name": "Tên tập tin"
+    },
+    "versions": {
+      "title": "Lịch sử phiên bản",
+      "filename": "Tên tập tin",
+      "mimetype": "Loại",
+      "create_date": "Ngày tạo",
+      "version": "Phiên bản"
+    }
+  }
+,
+  "tag": {
+    "new_tag": "Thẻ mới",
+    "search": "Tìm kiếm",
+    "default": {
+      "title": "Thẻ",
+      "message_1": "<strong>Thẻ</strong> là các nhãn gắn với tài liệu.",
+      "message_2": "Một tài liệu có thể được gắn nhiều thẻ, và một thẻ có thể áp dụng cho nhiều tài liệu.",
+      "message_3": "Sử dụng nút <span class=\"fas fa-pencil-alt\"></span>, bạn có thể chỉnh sửa quyền trên thẻ.",
+      "message_4": "Nếu một thẻ có thể được đọc bởi người dùng hoặc nhóm khác, thì các tài liệu liên quan cũng có thể được họ đọc.",
+      "message_5": "Ví dụ: hãy gắn thẻ <span class=\"label label-info\">MyCompany</span> cho tài liệu công ty của bạn và thêm quyền <strong>Có thể đọc</strong> cho nhóm <span class=\"btn btn-default\">employees</span>"
+    },
+    "edit": {
+      "delete_tag_title": "Xóa thẻ",
+      "delete_tag_message": "Bạn có chắc chắn muốn xóa thẻ này không?",
+      "name": "Tên",
+      "color": "Màu",
+      "parent": "Thẻ cha",
+      "info": "Quyền trên thẻ này cũng sẽ được áp dụng cho các tài liệu được gắn thẻ <span class=\"label label-info\" ng-style=\"{ 'background': color }\">{{ name }}</span>",
+      "circular_reference_title": "Tham chiếu vòng lặp",
+      "circular_reference_message": "Cấu trúc phân cấp của thẻ cha bị lặp, vui lòng chọn thẻ cha khác."
+    }
+  },
+  "group": {
+    "profile": {
+      "members": "Thành viên",
+      "no_members": "Không có thành viên",
+      "related_links": "Liên kết liên quan",
+      "edit_group": "Chỉnh sửa nhóm {{ name }}"
+    }
+  }
+,
+  "user": {
+    "profile": {
+      "groups": "Nhóm",
+      "quota_used": "Dung lượng đã dùng",
+      "percent_used": "{{ percent | number: 0 }}% đã dùng",
+      "related_links": "Liên kết liên quan",
+      "document_created": "Tài liệu được tạo bởi {{ username }}",
+      "edit_user": "Chỉnh sửa người dùng {{ username }}"
+    }
+  },
+  "usergroup": {
+    "search_groups": "Tìm kiếm trong nhóm",
+    "search_users": "Tìm kiếm trong người dùng",
+    "you": "Là bạn!",
+    "default": {
+      "title": "Người dùng & Nhóm",
+      "message": "Tại đây bạn có thể xem thông tin về người dùng và nhóm."
+    }
+  }
+,
+  "settings": {
+    "menu_personal_settings": "Cài đặt cá nhân",
+    "menu_user_account": "Tài khoản người dùng",
+    "menu_two_factor_auth": "Xác thực hai yếu tố",
+    "menu_opened_sessions": "Phiên đã mở",
+    "menu_file_importer": "Công cụ nhập tệp hàng loạt",
+    "menu_general_settings": "Cài đặt chung",
+    "menu_workflow": "Quy trình làm việc",
+    "menu_users": "Người dùng",
+    "menu_groups": "Nhóm",
+    "menu_vocabularies": "Từ vựng",
+    "menu_configuration": "Cấu hình",
+    "menu_inbox": "Quét hộp thư",
+    "menu_ldap": "Xác thực LDAP",
+    "menu_metadata": "Siêu dữ liệu tùy chỉnh",
+    "menu_monitoring": "Giám sát",
+    "ldap": {
+      "title": "Xác thực LDAP",
+      "enabled": "Bật xác thực LDAP",
+      "host": "Tên máy chủ LDAP",
+      "port": "Cổng LDAP (mặc định 389)",
+      "usessl": "Bật SSL (ldaps)",
+      "admin_dn": "Admin DN",
+      "admin_password": "Mật khẩu quản trị",
+      "base_dn": "Base search DN",
+      "filter": "Bộ lọc tìm kiếm (phải chứa USERNAME, ví dụ: \"(uid=USERNAME)\")",
+      "default_email": "Email mặc định cho người dùng LDAP",
+      "default_storage": "Dung lượng mặc định cho người dùng LDAP",
+      "saved": "Cấu hình LDAP đã được lưu thành công"
+    },
+    "user": {
+      "title": "Quản lý người dùng",
+      "add_user": "Thêm người dùng",
+      "username": "Tên đăng nhập",
+      "create_date": "Ngày tạo",
+      "totp_enabled": "Đã bật xác thực hai yếu tố cho tài khoản này",
+      "edit": {
+        "delete_user_title": "Xóa người dùng",
+        "delete_user_message": "Bạn có thực sự muốn xóa người dùng này không? Tất cả tài liệu, tệp và thẻ liên quan sẽ bị xóa",
+        "user_used_title": "Người dùng đang được sử dụng",
+        "user_used_message": "Người dùng này đang được sử dụng trong quy trình \"{{ name }}\"",
+        "edit_user_failed_title": "Người dùng đã tồn tại",
+        "edit_user_failed_message": "Tên đăng nhập này đã được sử dụng bởi người dùng khác",
+        "edit_user_title": "Chỉnh sửa \"{{ username }}\"",
+        "add_user_title": "Thêm người dùng",
+        "username": "Tên đăng nhập",
+        "email": "E-mail",
+        "groups": "Nhóm",
+        "storage_quota": "Dung lượng lưu trữ",
+        "storage_quota_placeholder": "Dung lượng lưu trữ (MB)",
+        "password": "Mật khẩu",
+        "password_confirm": "Xác nhận mật khẩu",
+        "disabled": "Người dùng bị vô hiệu hóa",
+        "password_reset_btn": "Gửi email đặt lại mật khẩu cho người dùng này",
+        "password_lost_sent_title": "Đã gửi email đặt lại mật khẩu",
+        "password_lost_sent_message": "Một email đặt lại mật khẩu đã được gửi đến <strong>{{ username }}</strong>",
+        "disable_totp_btn": "Tắt xác thực hai yếu tố cho người dùng này",
+        "disable_totp_title": "Tắt xác thực hai yếu tố",
+        "disable_totp_message": "Bạn có chắc chắn muốn tắt xác thực hai yếu tố cho người dùng này không?"
+      }
+    },
+    "workflow": {
+      "title": "Cấu hình quy trình",
+      "add_workflow": "Thêm quy trình",
+      "name": "Tên",
+      "create_date": "Ngày tạo",
+      "edit": {
+        "delete_workflow_title": "Xóa quy trình",
+        "delete_workflow_message": "Bạn có thực sự muốn xóa quy trình này không? Các quy trình đang chạy sẽ không bị xóa",
+        "edit_workflow_title": "Chỉnh sửa \"{{ name }}\"",
+        "add_workflow_title": "Thêm quy trình",
+        "name": "Tên",
+        "name_placeholder": "Tên bước hoặc mô tả",
+        "drag_help": "Kéo và thả để sắp xếp lại thứ tự các bước",
+        "type": "Loại bước",
+        "type_approve": "Phê duyệt",
+        "type_validate": "Xác nhận",
+        "target": "Giao cho",
+        "target_help": "<strong>Phê duyệt:</strong> Chấp nhận hoặc từ chối đánh giá<br/><strong>Xác nhận:</strong> Xem xét và tiếp tục quy trình",
+        "add_step": "Thêm bước quy trình",
+        "actions": "Sau đó sẽ thế nào?",
+        "remove_action": "Xóa hành động",
+        "acl_info": "Chỉ những người dùng và nhóm được định nghĩa ở đây mới có thể bắt đầu quy trình này trên tài liệu"
+      }
+    },
+    "security": {
+      "enable_totp": "Bật xác thực hai yếu tố",
+      "enable_totp_message": "Hãy đảm bảo bạn có ứng dụng tương thích TOTP trên điện thoại để thêm tài khoản mới",
+      "title": "Xác thực hai yếu tố",
+      "message_1": "Xác thực hai yếu tố cho phép bạn thêm một lớp bảo mật cho tài khoản <strong>{{ appName }}</strong>.<br/>Trước khi kích hoạt, hãy đảm bảo bạn có ứng dụng TOTP trên điện thoại:",
+      "message_google_authenticator": "Dành cho Android, iOS và Blackberry: <a href=\"https://support.google.com/accounts/answer/1066447\" target=\"_blank\">Google Authenticator</a>",
+      "message_duo_mobile": "Dành cho Android và iOS: <a href=\"https://guide.duo.com/third-party-accounts\" target=\"_blank\">Duo Mobile</a>",
+      "message_authenticator": "Dành cho Windows Phone: <a href=\"https://www.microsoft.com/en-US/store/apps/Authenticator/9WZDNCRFJ3RJ\" target=\"_blank\">Authenticator</a>",
+      "message_2": "Các ứng dụng này tự động tạo mã xác thực thay đổi theo thời gian.<br/>Bạn sẽ cần nhập mã này mỗi khi đăng nhập vào <strong>{{ appName }}</strong>.",
+      "secret_key": "Khóa bí mật của bạn là: <strong>{{ secret }}</strong>",
+      "secret_key_warning": "Hãy cấu hình ứng dụng TOTP trên điện thoại bằng khóa bí mật này ngay bây giờ, bạn sẽ không thể truy cập lại nó sau.",
+      "totp_enabled_message": "Xác thực hai yếu tố đã được bật trên tài khoản của bạn.<br/>Mỗi lần đăng nhập vào <strong>{{ appName }}</strong>, bạn sẽ được yêu cầu nhập mã xác thực từ ứng dụng trên điện thoại.<br/>Nếu mất điện thoại, bạn sẽ không thể đăng nhập nhưng phiên hiện tại cho phép bạn tạo lại khóa bí mật.",
+      "disable_totp": {
+        "disable_totp": "Tắt xác thực hai yếu tố",
+        "message": "Tài khoản của bạn sẽ không còn được bảo vệ bằng xác thực hai yếu tố nữa.",
+        "confirm_password": "Xác nhận mật khẩu của bạn",
+        "submit": "Tắt xác thực hai yếu tố"
+      },
+      "test_totp": "Vui lòng nhập mã xác thực hiển thị trên điện thoại:",
+      "test_code_success": "Mã xác thực hợp lệ",
+      "test_code_fail": "Mã này không hợp lệ, vui lòng kiểm tra lại cấu hình điện thoại hoặc tắt xác thực hai yếu tố"
+    },
+    "group": {
+      "title": "Quản lý nhóm",
+      "add_group": "Thêm nhóm",
+      "name": "Tên",
+      "edit": {
+        "delete_group_title": "Xóa nhóm",
+        "delete_group_message": "Bạn có thực sự muốn xóa nhóm này không?",
+        "edit_group_failed_title": "Nhóm đã tồn tại",
+        "edit_group_failed_message": "Tên nhóm này đã được sử dụng bởi nhóm khác",
+        "group_used_title": "Nhóm đang được sử dụng",
+        "group_used_message": "Nhóm này đang được sử dụng trong quy trình \"{{ name }}\"",
+        "edit_group_title": "Chỉnh sửa \"{{ name }}\"",
+        "add_group_title": "Thêm nhóm",
+        "name": "Tên",
+        "parent_group": "Nhóm cha",
+        "search_group": "Tìm nhóm",
+        "members": "Thành viên",
+        "new_member": "Thành viên mới",
+        "search_user": "Tìm người dùng"
+      }
+    },
+    "account": {
+      "title": "Tài khoản người dùng",
+      "password": "Mật khẩu",
+      "password_confirm": "Xác nhận mật khẩu",
+      "updated": "Cập nhật tài khoản thành công"
+    },
+    "config": {
+      "title_guest_access": "Truy cập khách",
+      "message_guest_access": "Truy cập khách cho phép bất kỳ ai vào {{ appName }} mà không cần mật khẩu.<br/>Giống như người dùng thường, khách chỉ có thể truy cập tài liệu của mình và tài liệu được phân quyền.<br/>",
+      "enable_guest_access": "Bật truy cập khách",
+      "disable_guest_access": "Tắt truy cập khách",
+      "title_theme": "Tùy chỉnh giao diện",
+      "title_general": "Cấu hình chung",
+      "default_language": "Ngôn ngữ mặc định cho tài liệu mới",
+      "application_name": "Tên ứng dụng",
+      "main_color": "Màu chính",
+      "custom_css": "CSS tùy chỉnh",
+      "custom_css_placeholder": "CSS tùy chỉnh thêm sau stylesheet chính",
+      "logo": "Logo (kích thước vuông)",
+      "background_image": "Ảnh nền",
+      "uploading_image": "Đang tải ảnh...",
+      "title_smtp": "Cấu hình email",
+      "smtp_hostname": "Tên máy chủ SMTP",
+      "smtp_port": "Cổng SMTP",
+      "smtp_from": "Email người gửi",
+      "smtp_username": "Tên đăng nhập SMTP",
+      "smtp_password": "Mật khẩu SMTP",
+      "smtp_updated": "Cấu hình SMTP đã được cập nhật thành công",
+      "title_ocr": "Nhận dạng ký tự quang học (OCR)",
+      "message_ocr": "OCR là tính năng trích xuất văn bản từ hình ảnh và PDF. Tính năng này yêu cầu cài đặt Tesseract trên máy chủ.",
+      "enable_ocr": "Bật OCR",
+      "disable_ocr": "Tắt OCR",
+      "webhooks": "Webhook",
+      "webhooks_explain": "Webhook sẽ được gọi khi sự kiện được chỉ định xảy ra. URL sẽ nhận yêu cầu POST với payload JSON chứa tên sự kiện và ID của tài nguyên liên quan.",
+      "webhook_event": "Sự kiện",
+      "webhook_url": "URL",
+      "webhook_create_date": "Ngày tạo",
+      "webhook_add": "Thêm webhook"
+    },
+    "metadata": {
+      "title": "Cấu hình siêu dữ liệu tùy chỉnh",
+      "message": "Tại đây bạn có thể thêm siêu dữ liệu tùy chỉnh cho tài liệu, như mã định danh nội bộ hoặc ngày hết hạn. Lưu ý loại siêu dữ liệu không thể thay đổi sau khi tạo.",
+      "name": "Tên siêu dữ liệu",
+      "type": "Loại siêu dữ liệu"
+    },
+    "inbox": {
+      "title": "Quét hộp thư",
+      "message": "Bằng cách bật tính năng này, hệ thống sẽ quét hộp thư đã chỉ định mỗi phút để tìm email <strong>chưa đọc</strong> và tự động nhập chúng.<br/>Sau khi nhập email, nó sẽ được đánh dấu là đã đọc.<br/>Cấu hình cho <a href=\"https://support.google.com/mail/answer/7126229?hl=en\" target=\"_blank\">Gmail</a>, <a href=\"https://support.office.com/en-us/article/pop-imap-and-smtp-settings-for-outlook-com-d088b986-291d-42b8-9564-9c414e2aa040\" target=\"_blank\">Outlook.com</a>, <a href=\"https://help.yahoo.com/kb/SLN4075.html\" target=\"_blank\">Yahoo</a>.",
+      "enabled": "Bật quét hộp thư",
+      "hostname": "Tên máy chủ IMAP",
+      "port": "Cổng IMAP (143 hoặc 993)",
+      "starttls": "Bật STARTTLS",
+      "username": "Tên đăng nhập IMAP",
+      "password": "Mật khẩu IMAP",
+      "folder": "Thư mục IMAP",
+      "tag": "Thẻ gắn vào tài liệu nhập",
+      "test": "Kiểm tra tham số",
+      "last_sync": "Lần đồng bộ cuối: {{ data.date | date: 'medium' }}, {{ data.count }} thư đã nhập",
+      "test_success": "Kết nối đến hộp thư thành công ({{ count }} thư <strong>chưa đọc</strong>)",
+      "test_fail": "Có lỗi khi kết nối đến hộp thư, vui lòng kiểm tra tham số",
+      "saved": "Cấu hình IMAP đã được lưu thành công",
+      "autoTagsEnabled": "Tự động thêm thẻ từ tiêu đề chứa #",
+      "deleteImported": "Xóa thư khỏi hộp thư sau khi nhập"
+    },
+    "monitoring": {
+      "background_tasks": "Tác vụ nền",
+      "queued_tasks": "Hiện có {{ count }} tác vụ đang chờ.",
+      "queued_tasks_explain": "Xử lý tệp, tạo ảnh thu nhỏ, cập nhật chỉ mục, OCR là tác vụ nền. Quá nhiều tác vụ chưa xử lý có thể làm kết quả tìm kiếm không đầy đủ.",
+      "server_logs": "Nhật ký máy chủ",
+      "log_date": "Ngày",
+      "log_tag": "Thẻ",
+      "log_message": "Thông điệp",
+      "indexing": "Đánh chỉ mục",
+      "indexing_info": "Nếu bạn thấy kết quả tìm kiếm không chính xác, hãy thử đánh chỉ mục lại toàn bộ. Kết quả tìm kiếm sẽ không đầy đủ cho đến khi hoàn tất.",
+      "start_reindexing": "Bắt đầu đánh chỉ mục toàn bộ",
+      "reindexing_started": "Đã bắt đầu đánh chỉ mục, vui lòng chờ cho đến khi tất cả tác vụ nền hoàn tất."
+    },
+    "session": {
+      "title": "Phiên đã mở",
+      "created_date": "Ngày tạo",
+      "last_connection_date": "Ngày kết nối cuối",
+      "user_agent": "Từ",
+      "current": "Hiện tại",
+      "current_session": "Đây là phiên hiện tại",
+      "clear_message": "Tất cả thiết bị khác kết nối đến tài khoản này sẽ bị ngắt",
+      "clear": "Xóa tất cả phiên khác"
+    },
+    "vocabulary": {
+      "title": "Mục từ vựng",
+      "choose_vocabulary": "Chọn từ vựng để chỉnh sửa",
+      "type": "Loại",
+      "coverage": "Phạm vi",
+      "rights": "Quyền",
+      "value": "Giá trị",
+      "order": "Thứ tự",
+      "new_entry": "Mục mới"
+    },
+    "fileimporter": {
+      "title": "Công cụ nhập tệp hàng loạt",
+      "advanced_users": "Dành cho người dùng nâng cao!",
+      "need_intro": "Nếu bạn cần:",
+      "need_1": "Nhập cả thư mục tệp cùng lúc",
+      "need_2": "Quét thư mục để tìm tệp mới và nhập chúng",
+      "line_1": "Truy cập <a href=\"https://github.com/sismics/docs/releases\">sismics/docs/releases</a> và tải công cụ nhập tệp phù hợp với hệ thống của bạn.",
+      "line_2": "Làm theo <a href=\"https://github.com/sismics/docs/tree/master/docs-importer\">hướng dẫn tại đây</a> để sử dụng công cụ.",
+      "line_3": "Tệp của bạn sẽ được nhập thành tài liệu theo cấu hình của công cụ nhập tệp.",
+      "download": "Tải xuống",
+      "instructions": "Hướng dẫn"
+    }
+  }
+,
+  "feedback": {
+    "title": "Góp ý cho chúng tôi",
+    "message": "Bạn có đề xuất hoặc câu hỏi nào về Teedy? Chúng tôi luôn lắng nghe bạn!",
+    "sent_title": "Đã gửi góp ý",
+    "sent_message": "Cảm ơn bạn đã góp ý! Điều này sẽ giúp chúng tôi cải thiện Teedy tốt hơn nữa."
+  },
+  "import": {
+    "title": "Đang nhập",
+    "error_quota": "Đã đạt giới hạn dung lượng, hãy liên hệ quản trị viên để tăng dung lượng",
+    "error_general": "Có lỗi xảy ra khi nhập tệp của bạn, vui lòng đảm bảo đó là tệp EML hợp lệ"
+  },
+  "app_share": {
+    "main": "Yêu cầu liên kết tài liệu được chia sẻ để truy cập",
+    "403": {
+      "title": "Không được phép",
+      "message": "Tài liệu bạn đang cố xem không còn được chia sẻ nữa"
+    }
+  }
+,
+  "directive": {
+    "acledit": {
+      "acl_target": "Cho",
+      "acl_permission": "Quyền",
+      "add_permission": "Thêm quyền",
+      "search_user_group": "Tìm người dùng hoặc nhóm"
+    },
+    "auditlog": {
+      "log_created": "đã tạo",
+      "log_updated": "đã cập nhật",
+      "log_deleted": "đã xóa",
+      "Acl": "ACL",
+      "Comment": "Bình luận",
+      "Document": "Tài liệu",
+      "File": "Tệp",
+      "Group": "Nhóm",
+      "Route": "Quy trình",
+      "RouteModel": "Mẫu quy trình",
+      "Tag": "Thẻ",
+      "User": "Người dùng",
+      "Webhook": "Webhook"
+    },
+    "selectrelation": {
+      "typeahead": "Nhập tiêu đề tài liệu"
+    },
+    "selecttag": {
+      "typeahead": "Nhập tên thẻ"
+    },
+    "datepicker": {
+      "current": "Hôm nay",
+      "clear": "Xóa",
+      "close": "Xong"
+    }
+  },
+  "filter": {
+    "filesize": {
+      "mb": "MB",
+      "kb": "kB"
+    }
+  },
+  "acl": {
+    "READ": "Có thể đọc",
+    "READWRITE": "Có thể ghi",
+    "WRITE": "Có thể ghi",
+    "USER": "Người dùng",
+    "GROUP": "Nhóm",
+    "SHARE": "Đã chia sẻ"
+  }
+,
+  "workflow_type": {
+    "VALIDATE": "Xác thực",
+    "APPROVE": "Phê duyệt"
+  },
+  "workflow_transition": {
+    "APPROVED": "Đã phê duyệt",
+    "REJECTED": "Đã từ chối",
+    "VALIDATED": "Đã xác thực"
+  },
+  "validation": {
+    "required": "Bắt buộc",
+    "too_short": "Quá ngắn",
+    "too_long": "Quá dài",
+    "email": "Phải là địa chỉ e-mail hợp lệ",
+    "password_confirm": "Mật khẩu và xác nhận mật khẩu phải trùng khớp",
+    "number": "Yêu cầu nhập số",
+    "no_space": "Không được chứa dấu cách hoặc dấu hai chấm",
+    "alphanumeric": "Chỉ cho phép chữ cái và số"
+  }
+,
+  "action_type": {
+    "ADD_TAG": "Thêm thẻ",
+    "REMOVE_TAG": "Xóa thẻ",
+    "PROCESS_FILES": "Xử lý tệp"
+  }
+,
+  "pagination": {
+    "previous": "Trước",
+    "next": "Tiếp",
+    "first": "Đầu tiên",
+    "last": "Cuối cùng"
+  },
+  "onboarding": {
+    "step1": {
+      "title": "Lần đầu?",
+      "description": "Nếu đây là lần đầu bạn dùng Teedy, hãy bấm nút Tiếp theo, nếu không thì bạn có thể đóng lại."
+    },
+    "step2": {
+      "title": "Tài liệu",
+      "description": "Teedy được tổ chức theo tài liệu và mỗi tài liệu có thể chứa nhiều tệp."
+    },
+    "step3": {
+      "title": "Tệp",
+      "description": "Bạn có thể thêm tệp sau khi tạo tài liệu hoặc tải nhanh ở khu vực này."
+    },
+    "step4": {
+      "title": "Tìm kiếm",
+      "description": "Đây là cách chính để bạn tìm lại tài liệu. Ngoài ra còn có tìm kiếm nâng cao bằng nút kính lúp."
+    },
+    "step5": {
+      "title": "Thẻ",
+      "description": "Tài liệu có thể được tổ chức bằng thẻ (giống như siêu thư mục). Tạo thẻ tại đây."
+    }
+  }
+,
+  "yes": "Có",
+  "no": "Không",
+  "ok": "OK",
+  "cancel": "Hủy",
+  "share": "Chia sẻ",
+  "unshare": "Hủy chia sẻ",
+  "close": "Đóng",
+  "add": "Thêm",
+  "open": "Mở",
+  "see": "Xem",
+  "save": "Lưu",
+  "export": "Xuất",
+  "edit": "Chỉnh sửa",
+  "delete": "Xóa",
+  "rename": "Đổi tên",
+  "download": "Tải xuống",
+  "loading": "Đang tải...",
+  "send": "Gửi",
+  "enabled": "Đã bật",
+  "disabled": "Đã tắt"
+
+}
